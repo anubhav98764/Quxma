@@ -1,0 +1,167 @@
+/* ===================================================================
+   Base Layout and Card Styling
+   =================================================================== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f2f5; /* Light, soft background */
+    padding: 20px;
+}
+
+.auth-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px; /* Standard professional form width */
+    border-radius: 12px; /* Smoother corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Elevated shadow */
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.auth-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ===================================================================
+   Tabbed Header System
+   =================================================================== */
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-button {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    transform: translateY(2px); /* Correct for border shift */
+}
+
+.tab-button:hover {
+    color: #555;
+}
+
+.tab-button.active {
+    color: #f43397; /* Active brand color */
+    border-bottom: 3px solid #f43397;
+}
+
+
+/* ===================================================================
+   Input Fields - Advanced Styling
+   =================================================================== */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly more rounded than card */
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Crucial for padding to be inside width */
+}
+
+/* Focus State: Highlight the active input */
+.input-group input:focus {
+    border-color: #f43397; /* Brand color border on focus */
+    box-shadow: 0 0 0 3px rgba(244, 51, 151, 0.15); /* Subtle glowing effect */
+    outline: none;
+}
+
+/* Placeholder color */
+.input-group input::placeholder {
+    color: #b0b0b0;
+}
+
+/* ===================================================================
+   Submit Button - Prominent CTA
+   =================================================================== */
+.auth-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f43397;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.auth-submit-btn:hover {
+    background-color: #e21c83; /* Darker on hover */
+    box-shadow: 0 4px 10px rgba(244, 51, 151, 0.3);
+}
+
+.auth-submit-btn:active {
+    transform: scale(0.99); /* Press effect */
+}
+
+/* ===================================================================
+   Footers and Utility Links
+   =================================================================== */
+
+.auth-options {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    font-size: 13px;
+    color: #f43397;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: #e21c83;
+    text-decoration: underline;
+}
+
+.switch-mode {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+.switch-link {
+    color: #f43397;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.switch-link:hover {
+    color: #e21c83;
+}

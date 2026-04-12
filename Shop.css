@@ -1,0 +1,38 @@
+/* Shop.css */
+
+.wrapping {
+    display: grid;
+    /* Ek line mein 4 barabar columns banayega */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; /* Photos ke bich ka gap */
+    padding: 20px;
+    justify-items: center; /* Items ko horizontally center karega */
+}
+
+.circle-container1 {
+    width:350px;
+    height: 400px;
+    display: flex;
+    margin-right: 10%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-image1 {
+    width: 400px;  /* Aap apne hisab se size change kar sakte hain */
+    height: 300px;
+    border-radius: 10%; /* Image ko circle banane ke liye */
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.image-label1 {
+    margin-top: 10px;
+    font-weight: bold;
+}
